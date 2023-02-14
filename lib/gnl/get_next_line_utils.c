@@ -6,7 +6,7 @@
 /*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/29 17:40:01 by bogunlan          #+#    #+#             */
-/*   Updated: 2023/02/13 03:19:51 by bogunlan         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:07:27 by bogunlan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 char	**ft_free_gnl( char **res)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (res[i])
