@@ -1,0 +1,23 @@
+NO ./textures/north_texture.txt
+
+SO ./textures/south_texture.txt
+
+WE ./textures/west_texture.txt
+
+
+EA ./textures/east_texture.txt
+
+F 220,255,0
+C 225,30,0
+
+
+
+
+
+111111
+100001
+100N11
+111111
+
+
+
