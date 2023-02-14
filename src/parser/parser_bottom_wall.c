@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_bottom_wall.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: sdukic <sdukic@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 21:49:57 by bogunlan          #+#    #+#             */
-/*   Updated: 2023/02/13 22:41:54 by bogunlan         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:39:45 by sdukic           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,8 +68,8 @@ int	player_out_of_bottom(char **split, t_b_wall *b_wall, int *index)
 
 	x = *index;
 	if (split[x + 2])
-	{		
-		if (ft_strlen(split[x + 2]) <= b_wall->player_position)
+	{
+		if ((int)ft_strlen(split[x + 2]) <= b_wall->player_position)
 			return (0);
 	}
 	return (1);

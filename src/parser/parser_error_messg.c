@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_error_messg.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: sdukic <sdukic@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 21:50:53 by bogunlan          #+#    #+#             */
-/*   Updated: 2023/02/13 22:12:28 by bogunlan         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:40:49 by sdukic           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 
 void	cub3d_error_messg(int err, t_map_parsing *map)
 {
+	(void)map;
 	if (err == map_error || err == elements_error)
 	{
 		printf("Error\nMap error\n");

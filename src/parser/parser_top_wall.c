@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_top_wall.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: sdukic <sdukic@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 21:55:45 by bogunlan          #+#    #+#             */
-/*   Updated: 2023/02/13 22:20:56 by bogunlan         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:41:15 by sdukic           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int	player_out_of_top(char **split, t_top_wall *top_wall, int *index)
 		if (split[x - 1][top_wall->player_position] == ' ')
 			return (TRUE);
 	}
-	if (ft_strlen(split[x + 1]) <= top_wall->player_position)
+	if ((int)ft_strlen(split[x + 1]) <= top_wall->player_position)
 	{
 		return (TRUE);
 	}

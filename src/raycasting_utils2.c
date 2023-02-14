@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   raycasting_utils2.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: sdukic <sdukic@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 16:54:53 by sdukic            #+#    #+#             */
-/*   Updated: 2023/02/13 22:07:36 by bogunlan         ###   ########.fr       */
+/*   Updated: 2023/02/14 16:43:45 by sdukic           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,7 +98,7 @@ t_float_vector	calculate_horizontal_ray_dest(t_vars *vars, t_ray ray)
 	ray.dest_in_map.y >= vars->map->raw_map_dimensions.y || \
 	(ray.dest_in_map.y < 0 || ray.dest_in_map.x < 0 || \
 	vars->map->raw_map[ray.dest_in_map.y] == NULL || \
-	ray.dest_in_map.x >= ft_strlen(vars->map->raw_map[ray.dest_in_map.y]) || \
+ray.dest_in_map.x >= (int)ft_strlen(vars->map->raw_map[ray.dest_in_map.y]) || \
 	vars->map->raw_map[ray.dest_in_map.y][ray.dest_in_map.x] == '1'))
 			break ;
 		else
@@ -126,7 +126,7 @@ t_float_vector	calculate_vertical_ray_dest(t_vars *vars, t_ray ray)
 	(ray.dest_in_map.y < 0 || \
 	ray.dest_in_map.x < 0 || \
 	vars->map->raw_map[ray.dest_in_map.y] == NULL || \
-	ray.dest_in_map.x >= ft_strlen(vars->map->raw_map[ray.dest_in_map.y]) || \
+ray.dest_in_map.x >= (int)ft_strlen(vars->map->raw_map[ray.dest_in_map.y]) || \
 	vars->map->raw_map[ray.dest_in_map.y][ray.dest_in_map.x] == '1'))
 			break ;
 		else
