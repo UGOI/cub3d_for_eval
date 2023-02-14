@@ -6,7 +6,7 @@
 /*   By: sdukic <sdukic@student.42heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 16:24:21 by sdukic            #+#    #+#             */
-/*   Updated: 2023/02/12 19:02:02 by sdukic           ###   ########.fr       */
+/*   Updated: 2023/02/14 17:48:19 by sdukic           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ t_int_vector	get_texture_dim_in_file(char *map_file)
 	line = steves_get_next_line(fd);
 	while (line)
 	{
-		dim.x = fmaxf(dim.x, (int)strlen(line));
+		dim.x = fmaxf(dim.x, (int)ft_strlen(line));
 		dim.y++;
 		free(line);
 		line = steves_get_next_line(fd);
