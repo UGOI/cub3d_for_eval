@@ -6,7 +6,7 @@
 /*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 21:50:27 by bogunlan          #+#    #+#             */
-/*   Updated: 2023/02/13 22:24:05 by bogunlan         ###   ########.fr       */
+/*   Updated: 2023/02/14 17:57:34 by bogunlan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,6 @@ int	check_player_position(t_map_parsing *map)
 		return (map_error);
 	}
 	return (no_errors);
-}
-
-int	map_has_nl_at_end(char **cub3d_map)
-{
-	int	i;
-
-	i = 0;
-	while (cub3d_map[i])
-		i++;
-	if (ft_strchr(cub3d_map[i - 1], '\n'))
-		return (TRUE);
-	return (FALSE);
 }
 
 int	check_wall_sides(t_map_parsing *map)
@@ -86,7 +74,5 @@ int	parse_map(char *cub_file, t_map_parsing *map)
 	if (check_wall_sides(map) != no_errors)
 		return (map_error);
 	close(map->fd);
-	if (map_has_nl_at_end(map->cub3d_map))
-		return (map_error);
 	return (0);
 }

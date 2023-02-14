@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parser_bottom_wall.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sdukic <sdukic@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: bogunlan <bogunlan@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/12 21:49:57 by bogunlan          #+#    #+#             */
-/*   Updated: 2023/02/14 16:39:45 by sdukic           ###   ########.fr       */
+/*   Updated: 2023/02/14 17:54:27 by bogunlan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
