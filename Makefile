@@ -34,7 +34,7 @@ OBJ = $(SRC:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 MAIN_OBJ = obj/main.o
 
 # Define executables
-EXE = a.out
+EXE = cub3d
 
 # Define default target
 all: libft $(EXE)
